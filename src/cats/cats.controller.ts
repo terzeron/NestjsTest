@@ -1,5 +1,5 @@
 import { Controller, Get, Req, Post, HttpCode, Header, Param } from '@nestjs/common';
-import { Request } from 'express';
+import { Request, Response } from 'express';
 
 @Controller('cats')
 export class CatsController {
@@ -7,6 +7,7 @@ export class CatsController {
     @Header('Cache-Control', 'none')
     @HttpCode(204)
     create(): string {
+        res.status(HttpStatus.CREATED).send();
         return 'This action adds a new cat';
     }
     // curl -v -X POST http://localhost:3000/cats

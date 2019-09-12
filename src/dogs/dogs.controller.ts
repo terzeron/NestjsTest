@@ -11,7 +11,7 @@ export class DogsController {
     
     @Get()
     async findAll(): Promise<any[]> {
-        return [];
+        return [1, 2, 3];
     }
     // curl http://localhost:3000/dogs
 }
