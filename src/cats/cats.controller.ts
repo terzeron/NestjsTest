@@ -7,10 +7,9 @@ export class CatsController {
     @Header('Cache-Control', 'none')
     @HttpCode(204)
     create(): string {
-        res.status(HttpStatus.CREATED).send();
-        return 'This action adds a new cat';
+        return 'This action adds a new cat (no action really)';
     }
-    // curl -v -X POST http://localhost:3000/cats
+    // curl -v -X POST http://localhost:3000/cats 
 
     @Get()
     findAll(@Req() request: Request): string {
