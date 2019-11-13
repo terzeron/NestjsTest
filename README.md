@@ -8,8 +8,9 @@
 
 ## 하위 핸들러 만드는 방법
 * nest g controller cats
-* nest g service cats/cats
+* nest g service cats
 * nest g module cats
+* ex) nest g service cats/wildcats는 서브디렉토리로 wildcats를 생성하고 거기에 서비스 스크립트를 생성함
 
 ## Installation
 
