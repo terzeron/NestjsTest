@@ -6,7 +6,12 @@
 * app.controller.ts
     * 라우팅을 담당하는 컨트롤러
 
-# Installation
+## 하위 핸들러 만드는 방법
+* nest g controller cats
+* nest g service cats/cats
+* nest g module cats
+
+## Installation
 
 * npm install -g @nestjs/cli
 * nest new project-name
