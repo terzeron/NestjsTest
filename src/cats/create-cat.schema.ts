@@ -1,6 +1,6 @@
-import Joi = require('joi');
+import Joi = require('@hapi/joi');
 
-const createCatSchema = {
+export const createCatSchema = {
     name: Joi.string().required(),
     age: Joi.number().required(),
     breed: Joi.string().required(),
