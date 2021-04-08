@@ -1,5 +1,5 @@
 import {ArgumentMetadata, BadRequestException, Injectable, PipeTransform} from '@nestjs/common';
-import {ObjectSchema} from 'joi';
+import {ObjectSchema} from '@hapi/joi';
 
 @Injectable()
 export class JoiValidationPipe implements PipeTransform {
@@ -11,6 +11,7 @@ export class JoiValidationPipe implements PipeTransform {
         if (error) {
             throw new BadRequestException('Validation failed');
         }
+        console.log('metadata=' + metadata);
         return value;
     }
 }
