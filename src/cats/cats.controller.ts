@@ -13,6 +13,7 @@ export class CatsController {
     }
 
     @Post()
+    // 스키마에 기반한 validation, method-scoped pipe
     @UsePipes(new JoiValidationPipe(createCatSchema))
     async create(@Body() createCatDto: CreateCatDto) {
         this.catsService.create(createCatDto);

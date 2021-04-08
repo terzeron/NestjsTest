@@ -13,5 +13,6 @@ import {DogsService} from './dogs.service';
 })
 export class DogsModule {
     // dependency injection
-    constructor(private dogsService: DogsService) {}
+    constructor(private dogsService: DogsService) {
+    }
 }
